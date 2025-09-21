@@ -14,3 +14,8 @@ Algorithm Concepts: Greedy algorithm, Prims algorithm, Optimization
 
 Use Case:
 Useful for IT administrators and network planners in colleges and offices to efficiently plan WiFi networks.
+
+## Demo / Live Preview
+You can view the interactive web version of this project here:  
+[Campus WiFi Planner Demo](https://codepen.io/Prajakta-Gaikwad/pen/ogjagzW)
+
