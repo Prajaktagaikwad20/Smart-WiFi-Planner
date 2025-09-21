@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Wi-Fi Planner — Prim's Algorithm</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📡 Campus Wi-Fi Network Planner</h1>
+    <h2>Using Prim’s Algorithm to Reduce Cost</h2>
+  </header>
+
+  <div class="controls">
+    <label>Buildings:
+      <input id="nodes" type="number" value="8" min="2" max="20">
+    </label>
+    <label>Density:
+      <input id="density" type="number" step="0.1" min="0.2" max="1" value="0.6">
+    </label>
+    <label>Start:
+      <select id="startNode"></select>
+    </label>
+    <button onclick="buildGraph()">Generate</button>
+    <button onclick="restartPrim()">Restart</button>
+    <button onclick="stepPrim()">Step ▶</button>
+    <button onclick="runPrim()">Auto ▶▶</button>
+  </div>
+
+  <div class="container">
+    <div id="graph"></div>
+    <aside>
+      <h3>Algorithm Log</h3>
+      <div id="log"></div>
+
+      <h3>Comparison Chart</h3>
+      <canvas id="costChart" height="150"></canvas>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
